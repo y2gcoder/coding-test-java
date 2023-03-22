@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 삼각 달팽이
+ * level 2
+ * https://programmers.co.kr/learn/courses/30/lessons/68645
+ */
 public class MakingStar {
 
     public static void main(String[] args) {
