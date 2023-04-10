@@ -66,12 +66,10 @@ public class ManhattanDistance {
                 if (ny < 0 || ny >= room.length || nx < 0 || nx >= room[ny].length) continue;
                 // room[ny][nx]를 통해 다른 응시자에게 도달할 수 있는지 검사
                 switch (room[ny][nx]) {
-                    case 'P' -> {
-                        return false;
-                    }
-                    case 'O' -> {
+                    case 'P': return false;
+                    case 'O':
                         if (isNextToVolunteer(room, nx, ny, 3 - d)) return false;
-                    }
+                        break;
                 }
             }
             return true;
